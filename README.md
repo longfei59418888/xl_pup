@@ -33,5 +33,18 @@ import {setReq, setRes, proxy, setExpose} from './dist/index.min'
 
 ## 方法
 #### default(url,option) : 初始化，创建要给页面，用于测试  
-#### del(path)： 
+#### del(path,count)：删除input内文本
+#### input(path,text)：输入input内文本
+#### click(path)：点击某一元素
+#### check(path,text)：检查元素内文本
+#### enter(path,text)：向input继续输入文本
+#### log(msg)：打印流程
+#### focus(path)：获取焦点
+#### setReq()：设置请求拦截
+#### proxy()：设置请求代理
+#### setExpose()：设置 exposes 中数据
+
+###### 想要了解更多可以去githug上面自行浏览
+###### github 有问题可以在github留言
+
 
