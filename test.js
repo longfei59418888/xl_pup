@@ -1,6 +1,6 @@
 require('babel-register')
-import index, {del, input, click, check, enter, focus, log} from './dist/index.min'
-import {setReq, setRes, proxy, setExpose} from './dist/index.min'
+import index, {del, input, click, check, enter, focus, log} from 'xl_pup'
+import {setReq, setRes, proxy, setExpose} from 'xl_pup'
 
 
 (async () => {

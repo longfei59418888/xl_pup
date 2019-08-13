@@ -1,0 +1,845 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[2],{
+
+/***/ "./src/pages/apply/images/smile.png":
+/*!******************************************!*\
+  !*** ./src/pages/apply/images/smile.png ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAhFBMVEUAAAD/PU3/Pk3/Pk3/Pk3/Pk3/Pk3/PU3/Pk3/Pkz/Pk3/PU3/Pk7/PE//PUz/Pk3/Pk3/Pk3/PU7/OU//PUz/Pk3/O0z/PU//QEr/Pk3/Pk3/Pkz/Pk3/PU3/Okv/QFH/PU3/Pk7/Pk3/Pkz/Pk3/P0z/P07/PUz/PUv/QEv/Pkz/Pk0cCm03AAAAK3RSTlMA+7CcyfaJMORD6NwoE+3XXsFrFnBNIg4Jq5GPgzoeG1tSdPHgWLuWGSx7k7gdxgAAA8JJREFUaN7VmmuXqiAUhjcpmZWXtLJMu9fU8P//31mdmQXo1kBheTrPt1k1AfvystkAuqT+Mh+5s5ASQsOZO8qXfgo2ORydK2vg6hwPYIV5EbE3RMUcDAkSlylxk8DETDllWtC8r9nWDmHaEGcN3cl2hHWC7DLoyG3COjO5QRf2d9aL+x60WYWsgenCOccnvyz9U3x2FlPWQLgCPTY7hpg5xwfUeBydGUPsNlr64SJbj+etmTpGvnNTjcCtz27kw1v8UX3VymD2qqYmWw+UeFtSdZ7if8oLk1k8QYvngslcyrdzqowxjUGbeFoZxXvjj8o3t1knhdhW5tfql1T2OU2gIwmVvZ+25Icrh60HnfHkcHab80XOwWgPPdhHclY2aok8jQB6EcjGWAFiH6KlKlCZPMTWuEu2CqA3gWSxO9o/JJ/vwYC95P1bLcrFR9QDIzwqppu1RVYChiQtEbYmIs/BGJH7RE58R+hBBsZkQp0c4BzEQmKwQCyWIuqxXGg7WEEof85jm/KBn2CFJzcNDVA4bMESWxSsQgo8sIQnJOq34hA1A1hDVBdzeFHwv32whs9/tIAXEVcBsMiEy+3fJOFjjsEiY/6zr1Q5CuuJ4BjVaK8ga8QAdU8fZUmZAYewGlAFb6c4dmaytFz5H1YHEZO/AqRiWXYHEW5IpVh72B3kIWXGkos89BjkhAfhcMFfQt4kwNxNy1+Uov71S9IgxbnIfwevRJROKnMRwDh8dUIdz3g/ICkoSEn7PnQWGjlr2hNLwiVAK7FJ+c6UM+CF46lihgljtAANCsrYZPU2KEKgLRLslRlokZWeQoipiNYSLFPyTX2QQZC5zMHmQo43BzsehbA5OIRRMpqDkxHJijlYVpBAmoMFEkm9OVjq0aZlDt600PZrDt5+USHRjLdsS4Zvpd+vqCRqxr+w7+YxCPsCBCqJcHGHWdHXdzeAWJJXhKIPcHGnLlNv5Cen6pMIRrxJoihT1QV3woWukOe8SULR7lEU3Mqjw5wwTsjvMQ7nKxOcFUcH9SEoJkwicopz4URMZqw8BKmPcyfK3vKtOM7pHUzLCWuH3hQHU90jdnpnbURz1RFbv1kQh6wJUmzUzQL9tkcwprrXP7jtod/AeRRXJhPmc3UDp0cryi8Wlx9Tu7vVRqcV1bOpFqy9eaDbVBukPThEo3OIlu1gzefh2+j2LwQGvdoY/pLG/nXT8Bdn9q8A//1lpp1r2c+4YDa/Kv+cS3+j5wuf9hCj55OSz3wc0/WZz2c/WNJ8evW/PCKz8BzuD+PW/jq4pFKDAAAAAElFTkSuQmCC"
+
+/***/ }),
+
+/***/ "./src/pages/apply/utils.js":
+/*!**********************************!*\
+  !*** ./src/pages/apply/utils.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime-corejs3/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime-corejs3/helpers/interopRequireWildcard.js");
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs3/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs3/helpers/interopRequireDefault.js");
+
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/object/define-property */ "./node_modules/@babel/runtime-corejs3/core-js-stable/object/define-property.js");
+
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.setNodeInfo = setNodeInfo;
+exports.applyActivation = exports.applyActivationCheck = exports.toApply = exports.onBackOne = exports.getExtraInfo = exports.settingTradPwd = exports.face = exports.addhaarOcr = exports.panOcr = exports.upLoadImage = void 0;
+
+var _stringify = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/json/stringify */ "./node_modules/@babel/runtime-corejs3/core-js-stable/json/stringify.js"));
+
+var _setTimeout2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/set-timeout */ "./node_modules/@babel/runtime-corejs3/core-js-stable/set-timeout.js"));
+
+var _objectSpread2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs3/helpers/objectSpread */ "./node_modules/@babel/runtime-corejs3/helpers/objectSpread.js"));
+
+var _keys = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/object/keys */ "./node_modules/@babel/runtime-corejs3/core-js-stable/object/keys.js"));
+
+var _forEach = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/instance/for-each */ "./node_modules/@babel/runtime-corejs3/core-js-stable/instance/for-each.js"));
+
+var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs3/regenerator */ "./node_modules/@babel/runtime-corejs3/regenerator/index.js"));
+
+__webpack_require__(/*! regenerator-runtime/runtime */ "./node_modules/regenerator-runtime/runtime.js");
+
+var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs3/helpers/asyncToGenerator */ "./node_modules/@babel/runtime-corejs3/helpers/asyncToGenerator.js"));
+
+var _native = __webpack_require__(/*! src/utils/native */ "./src/utils/native/index.js");
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _actions = __webpack_require__(/*! src/constants/actions */ "./src/constants/actions.js");
+
+var _store = __webpack_require__(/*! src/store */ "./src/store/index.js");
+
+var _urls = __webpack_require__(/*! src/constants/urls */ "./src/constants/urls.js");
+
+var _toast = __webpack_require__(/*! src/components/modal/toast */ "./src/components/modal/toast/index.js");
+
+var _envs = __webpack_require__(/*! src/constants/envs */ "./src/constants/envs.js");
+
+var _default = __webpack_require__(/*! src/constants/index/default */ "./src/constants/index/default.js");
+
+var _popup = __webpack_require__(/*! src/components/modal/popup */ "./src/components/modal/popup/index.jsx");
+
+var _history = _interopRequireWildcard(__webpack_require__(/*! ../../utils/init/history */ "./src/utils/init/history.js"));
+
+var _confirm = __webpack_require__(/*! ../../components/modal/confirm */ "./src/components/modal/confirm/index.js");
+
+var _fetch = __webpack_require__(/*! ../../utils/fetch */ "./src/utils/fetch.js");
+
+var _apis = __webpack_require__(/*! ../../constants/apis */ "./src/constants/apis.js");
+
+var _envs2 = _interopRequireDefault(__webpack_require__(/*! ../../constants/envs */ "./src/constants/envs.js"));
+
+/**
+ * 授信的处理方法
+ * @author Xiaolong
+ */
+var upLoadImage =
+/*#__PURE__*/
+function () {
+  var _ref = (0, _asyncToGenerator2.default)(
+  /*#__PURE__*/
+  _regenerator.default.mark(function _callee() {
+    var fileMap,
+        bizType,
+        _args = arguments;
+    return _regenerator.default.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            fileMap = _args.length > 0 && _args[0] !== undefined ? _args[0] : [];
+            bizType = _args.length > 1 && _args[1] !== undefined ? _args[1] : '';
+
+            if (!_envs.IS_MOCK) {
+              _context.next = 4;
+              break;
+            }
+
+            return _context.abrupt("return", {
+              fileNameCodes: {
+                pan_image: 'test_pan_image',
+                aadhaar_front_image: 'test_aadhaar_front_image',
+                aadhaar_rear_image: 'test_aadhaar_rear_image',
+                face_image: 'test_face_image'
+              }
+            });
+
+          case 4:
+            _context.next = 6;
+            return (0, _fetch.post)(_apis.API_COMMON_MULTIFILE_UPLOAD, {
+              fileSuffix: 'jpg',
+              fileMap: fileMap,
+              bizType: bizType
+            });
+
+          case 6:
+            return _context.abrupt("return", _context.sent);
+
+          case 7:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  }));
+
+  return function upLoadImage() {
+    return _ref.apply(this, arguments);
+  };
+}(); // pan Ocr 识别
+
+
+exports.upLoadImage = upLoadImage;
+
+var panOcr =
+/*#__PURE__*/
+function () {
+  var _ref2 = (0, _asyncToGenerator2.default)(
+  /*#__PURE__*/
+  _regenerator.default.mark(function _callee2(data) {
+    var appId, appKey, invokeType, _data$callBackUrl, callBackUrl, rst;
+
+    return _regenerator.default.wrap(function _callee2$(_context2) {
+      while (1) {
+        switch (_context2.prev = _context2.next) {
+          case 0:
+            appId = data.appId, appKey = data.appKey, invokeType = data.invokeType, _data$callBackUrl = data.callBackUrl, callBackUrl = _data$callBackUrl === void 0 ? '' : _data$callBackUrl;
+            _context2.next = 3;
+            return (0, _native.panCardOCR)({
+              appId: appId,
+              appKey: appKey,
+              busiType: invokeType,
+              callbackUrl: callBackUrl
+            });
+
+          case 3:
+            rst = _context2.sent;
+            return _context2.abrupt("return", rst);
+
+          case 5:
+          case "end":
+            return _context2.stop();
+        }
+      }
+    }, _callee2);
+  }));
+
+  return function panOcr(_x) {
+    return _ref2.apply(this, arguments);
+  };
+}(); // addhaar 识别
+
+
+exports.panOcr = panOcr;
+
+var addhaarOcr =
+/*#__PURE__*/
+function () {
+  var _ref3 = (0, _asyncToGenerator2.default)(
+  /*#__PURE__*/
+  _regenerator.default.mark(function _callee3(data) {
+    var _data$appId, appId, _data$appKey, appKey, _data$invokeType, invokeType, _data$callBackUrl2, callBackUrl, rst;
+
+    return _regenerator.default.wrap(function _callee3$(_context3) {
+      while (1) {
+        switch (_context3.prev = _context3.next) {
+          case 0:
+            _data$appId = data.appId, appId = _data$appId === void 0 ? '' : _data$appId, _data$appKey = data.appKey, appKey = _data$appKey === void 0 ? '' : _data$appKey, _data$invokeType = data.invokeType, invokeType = _data$invokeType === void 0 ? '' : _data$invokeType, _data$callBackUrl2 = data.callBackUrl, callBackUrl = _data$callBackUrl2 === void 0 ? '' : _data$callBackUrl2;
+            _context3.next = 3;
+            return (0, _native.aadhaarOCR)({
+              appId: appId,
+              appKey: appKey,
+              busiType: invokeType,
+              callbackUrl: callBackUrl
+            });
+
+          case 3:
+            rst = _context3.sent;
+            return _context3.abrupt("return", rst);
+
+          case 5:
+          case "end":
+            return _context3.stop();
+        }
+      }
+    }, _callee3);
+  }));
+
+  return function addhaarOcr(_x2) {
+    return _ref3.apply(this, arguments);
+  };
+}(); // face 人脸识别
+
+
+exports.addhaarOcr = addhaarOcr;
+
+var face =
+/*#__PURE__*/
+function () {
+  var _ref4 = (0, _asyncToGenerator2.default)(
+  /*#__PURE__*/
+  _regenerator.default.mark(function _callee4(data) {
+    var _context4;
+
+    var appId, appKey, _data$invokeType2, invokeType, _data$callBackUrl3, callBackUrl, rst, _rst$msg, msg, _rst$data, _data, _scanResult, _rst$imageMap, imageMap, rstImage, fileNameCodes, faceImage, scanResult, param;
+
+    return _regenerator.default.wrap(function _callee4$(_context5) {
+      while (1) {
+        switch (_context5.prev = _context5.next) {
+          case 0:
+            appId = data.appId, appKey = data.appKey, _data$invokeType2 = data.invokeType, invokeType = _data$invokeType2 === void 0 ? '' : _data$invokeType2, _data$callBackUrl3 = data.callBackUrl, callBackUrl = _data$callBackUrl3 === void 0 ? '' : _data$callBackUrl3;
+            _context5.next = 3;
+            return (0, _native.livenessRecognition)({
+              appId: appId,
+              busiType: invokeType,
+              appKey: appKey,
+              callbackUrl: callBackUrl
+            });
+
+          case 3:
+            rst = _context5.sent;
+
+            if (!(rst && rst.ERROR_TAG)) {
+              _context5.next = 9;
+              break;
+            }
+
+            _rst$msg = rst.msg, msg = _rst$msg === void 0 ? '' : _rst$msg, _rst$data = rst.data, _data = _rst$data === void 0 ? {} : _rst$data;
+            _scanResult = JSON.parse(_data.scanResult || '{}');
+            (0, _toast.infoOne)(_scanResult.comment || msg);
+            return _context5.abrupt("return", null);
+
+          case 9:
+            _rst$imageMap = rst.imageMap, imageMap = _rst$imageMap === void 0 ? '{}' : _rst$imageMap;
+            imageMap = JSON.parse(imageMap);
+            _context5.next = 13;
+            return upLoadImage([{
+              fileKey: 'image_action1',
+              fileId: imageMap.fileAction1
+            }, {
+              fileKey: 'image_action2',
+              fileId: imageMap.fileAction2
+            }], 'FACE');
+
+          case 13:
+            rstImage = _context5.sent;
+
+            if (rstImage) {
+              _context5.next = 16;
+              break;
+            }
+
+            return _context5.abrupt("return", null);
+
+          case 16:
+            fileNameCodes = rstImage.fileNameCodes;
+            faceImage = [];
+            (0, _forEach.default)(_context4 = (0, _keys.default)(fileNameCodes)).call(_context4, function (item) {
+              faceImage.push(fileNameCodes[item]);
+            });
+            scanResult = JSON.parse(rst.scanResult || '{}');
+            param = {
+              reportId: scanResult.report_id,
+              faceImage: faceImage.join('|'),
+              faceData: rst.scanResult
+            };
+            return _context5.abrupt("return", param);
+
+          case 22:
+          case "end":
+            return _context5.stop();
+        }
+      }
+    }, _callee4);
+  }));
+
+  return function face(_x3) {
+    return _ref4.apply(this, arguments);
+  };
+}(); // 设置交易密码
+
+
+exports.face = face;
+
+var settingTradPwd =
+/*#__PURE__*/
+function () {
+  var _ref5 = (0, _asyncToGenerator2.default)(
+  /*#__PURE__*/
+  _regenerator.default.mark(function _callee5(nodeStepInfo) {
+    var segmentInfo,
+        bak,
+        flowNo,
+        applNo,
+        nodeNo,
+        nodeCode,
+        rst,
+        flag,
+        _rst$data2,
+        data,
+        ERROR_TAG,
+        _rst$msg2,
+        msg,
+        location,
+        pathname,
+        nodeGivenCode,
+        nextNodeCode,
+        _args5 = arguments;
+
+    return _regenerator.default.wrap(function _callee5$(_context6) {
+      while (1) {
+        switch (_context6.prev = _context6.next) {
+          case 0:
+            segmentInfo = _args5.length > 1 && _args5[1] !== undefined ? _args5[1] : {
+              passwordKey: 'password'
+            };
+            bak = _args5.length > 2 && _args5[2] !== undefined ? _args5[2] : function () {};
+            flowNo = nodeStepInfo.flowNo, applNo = nodeStepInfo.applNo, nodeNo = nodeStepInfo.nodeNo, nodeCode = nodeStepInfo.nodeCode;
+            _context6.next = 5;
+            return (0, _native.settingTradersPwd)({
+              type: 1,
+              businessParams: (0, _objectSpread2.default)({}, {
+                flowNo: flowNo,
+                applNo: applNo,
+                productCode: _default.DEFAULT_PRODUCT_CODE,
+                nodeNo: nodeNo,
+                nodeCode: nodeCode
+              }, {
+                segmentInfo: segmentInfo
+              }),
+              method: _apis.API_USER_APPLY_ITEM_COMMIT,
+              requestUrl: _envs2.default.URL
+            });
+
+          case 5:
+            rst = _context6.sent;
+
+            if (!rst) {
+              _context6.next = 17;
+              break;
+            }
+
+            flag = rst.flag, _rst$data2 = rst.data, data = _rst$data2 === void 0 ? {} : _rst$data2, ERROR_TAG = rst.ERROR_TAG, _rst$msg2 = rst.msg, msg = _rst$msg2 === void 0 ? '' : _rst$msg2;
+            location = _history.default.location;
+            pathname = location.pathname;
+
+            if (!(ERROR_TAG || flag !== 'S')) {
+              _context6.next = 14;
+              break;
+            }
+
+            if (pathname !== _urls.INDEX_HOME) {
+              (0, _history.setBack)(null);
+
+              _history.default.goBack({
+                path: _urls.INDEX_HOME
+              });
+            }
+
+            (0, _setTimeout2.default)(function () {
+              (0, _toast.infoOne)(msg);
+            }, 100);
+            return _context6.abrupt("return");
+
+          case 14:
+            setNodeInfo(data);
+            nodeGivenCode = data.nodeGivenCode, nextNodeCode = data.nextNodeCode;
+
+            if (nodeGivenCode === 'TIME_OUT_SET_PAD') {
+              (0, _confirm.oneError)({
+                msg: _react.default.createElement("div", {
+                  className: "t-center"
+                }, "The interval between the completion of transaction password and face recognition shall not exceed 12 hours."),
+                okText: 'Face Recognition again',
+                ok: function ok() {
+                  bak(data);
+                }
+              });
+            } else {
+              (0, _setTimeout2.default)(function () {
+                _history.default.push(_urls.USER_APPLY_NODE_MAP[nextNodeCode]);
+              }, 0);
+            }
+
+          case 17:
+            return _context6.abrupt("return", rst);
+
+          case 18:
+          case "end":
+            return _context6.stop();
+        }
+      }
+    }, _callee5);
+  }));
+
+  return function settingTradPwd(_x4) {
+    return _ref5.apply(this, arguments);
+  };
+}(); // 获取额外信息
+
+
+exports.settingTradPwd = settingTradPwd;
+
+var getExtraInfo =
+/*#__PURE__*/
+function () {
+  var _ref6 = (0, _asyncToGenerator2.default)(
+  /*#__PURE__*/
+  _regenerator.default.mark(function _callee6() {
+    var option,
+        _option$contactList,
+        contactList,
+        _option$appList,
+        appList,
+        fileMap,
+        contactsInfo,
+        appRst,
+        _args6 = arguments;
+
+    return _regenerator.default.wrap(function _callee6$(_context7) {
+      while (1) {
+        switch (_context7.prev = _context7.next) {
+          case 0:
+            option = _args6.length > 0 && _args6[0] !== undefined ? _args6[0] : {};
+            _option$contactList = option.contactList, contactList = _option$contactList === void 0 ? true : _option$contactList, _option$appList = option.appList, appList = _option$appList === void 0 ? true : _option$appList;
+            fileMap = [];
+
+            if (!contactList) {
+              _context7.next = 10;
+              break;
+            }
+
+            _context7.next = 6;
+            return (0, _native.getContactsInfo)({
+              limit: '0'
+            });
+
+          case 6:
+            contactsInfo = _context7.sent;
+
+            if (!(!contactsInfo || contactsInfo.ERROR_TAG)) {
+              _context7.next = 9;
+              break;
+            }
+
+            return _context7.abrupt("return", null);
+
+          case 9:
+            fileMap.push({
+              fileKey: 'contactList',
+              fileId: contactsInfo.fileId
+            });
+
+          case 10:
+            if (!appList) {
+              _context7.next = 17;
+              break;
+            }
+
+            _context7.next = 13;
+            return (0, _native.getInstalledApps)();
+
+          case 13:
+            appRst = _context7.sent;
+
+            if (!(!appRst || appRst.ERROR_TAG)) {
+              _context7.next = 16;
+              break;
+            }
+
+            return _context7.abrupt("return", null);
+
+          case 16:
+            fileMap.push({
+              fileKey: 'appList',
+              fileId: appRst.fileId
+            });
+
+          case 17:
+            return _context7.abrupt("return", fileMap);
+
+          case 18:
+          case "end":
+            return _context7.stop();
+        }
+      }
+    }, _callee6);
+  }));
+
+  return function getExtraInfo() {
+    return _ref6.apply(this, arguments);
+  };
+}(); // 挽留弹框1
+
+
+exports.getExtraInfo = getExtraInfo;
+
+var onBackOne = function onBackOne() {
+  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  var _options$title = options.title,
+      title = _options$title === void 0 ? _react.default.createElement("img", {
+    className: "height100 width100 ilbl mb44",
+    src: __webpack_require__(/*! ./images/smile.png */ "./src/pages/apply/images/smile.png"),
+    alt: ""
+  }) : _options$title,
+      _options$msg = options.msg,
+      msg = _options$msg === void 0 ? _react.default.createElement("div", null, _react.default.createElement("p", {
+    className: "flh42 height50 font36 rmed fw5 fcolor1 nowrap t-center"
+  }, "Give up the loan of up to \u20B9 100000"), _react.default.createElement("p", {
+    className: "lh40 font28 fcolor1 t-center"
+  }, "Only few steps left to get it")) : _options$msg,
+      _options$cancelText = options.cancelText,
+      cancelText = _options$cancelText === void 0 ? 'Give up' : _options$cancelText,
+      _options$okText = options.okText,
+      okText = _options$okText === void 0 ? 'Continue' : _options$okText,
+      _options$cancel = options.cancel,
+      _cancel = _options$cancel === void 0 ? function () {
+    _history.default.goBack({
+      path: _urls.INDEX_HOME
+    });
+  } : _options$cancel;
+
+  var isShowConfirm = null;
+  (0, _history.setBack)(function () {
+    var pop = (0, _popup.getModalList)();
+
+    if (pop) {
+      pop();
+      return;
+    }
+
+    if (isShowConfirm) {
+      isShowConfirm();
+      (0, _history.setBack)(null);
+      (0, _setTimeout2.default)(function () {
+        _cancel();
+      }, 0);
+      return;
+    }
+
+    isShowConfirm = (0, _confirm.oneConfirm)({
+      title: title,
+      msg: msg,
+      cancelText: cancelText,
+      okText: okText,
+      end: function end() {
+        isShowConfirm = null;
+      },
+      cancel: function cancel() {
+        (0, _history.setBack)(null);
+
+        _cancel();
+      }
+    });
+  });
+}; // 设置当前节点信息
+
+
+exports.onBackOne = onBackOne;
+
+function setNodeInfo(nodeInfo) {
+  var _getStoreState = (0, _store.getStoreState)(),
+      apply = _getStoreState.apply;
+
+  var _apply$nodeStepInfo = apply.nodeStepInfo,
+      nodeStepInfo = _apply$nodeStepInfo === void 0 ? {} : _apply$nodeStepInfo;
+  var _nodeInfo$nextNodeNo = nodeInfo.nextNodeNo,
+      nextNodeNo = _nodeInfo$nextNodeNo === void 0 ? null : _nodeInfo$nextNodeNo,
+      _nodeInfo$nextNodeCod = nodeInfo.nextNodeCode,
+      nextNodeCode = _nodeInfo$nextNodeCod === void 0 ? null : _nodeInfo$nextNodeCod;
+  if (nextNodeNo) nodeStepInfo.nodeNo = nextNodeNo;
+  if (nextNodeCode) nodeStepInfo.nodeCode = nextNodeCode;
+  (0, _store.getStoreDispatch)({
+    type: _actions.APPLY_APPL_NODE_QUERY,
+    data: (0, _objectSpread2.default)({}, nodeStepInfo, nodeInfo)
+  });
+} // 去授信
+
+
+var toApply =
+/*#__PURE__*/
+function () {
+  var _ref7 = (0, _asyncToGenerator2.default)(
+  /*#__PURE__*/
+  _regenerator.default.mark(function _callee7(options) {
+    var pwdCall, nodeInfo, _nodeInfo$nodeCode, nodeCode, _nodeInfo$panInfo, panInfo, nodePage;
+
+    return _regenerator.default.wrap(function _callee7$(_context8) {
+      while (1) {
+        switch (_context8.prev = _context8.next) {
+          case 0:
+            (0, _toast.loadingOne)();
+            pwdCall = options.pwdCall;
+            _context8.next = 4;
+            return (0, _fetch.post)(_apis.API_USER_APPLY_NODE_QUERY, {
+              productCode: _default.DEFAULT_PRODUCT_CODE
+            });
+
+          case 4:
+            nodeInfo = _context8.sent;
+
+            if (nodeInfo) {
+              _context8.next = 8;
+              break;
+            }
+
+            (0, _toast.close)();
+            return _context8.abrupt("return");
+
+          case 8:
+            setNodeInfo(nodeInfo);
+            _nodeInfo$nodeCode = nodeInfo.nodeCode, nodeCode = _nodeInfo$nodeCode === void 0 ? '' : _nodeInfo$nodeCode, _nodeInfo$panInfo = nodeInfo.panInfo, panInfo = _nodeInfo$panInfo === void 0 ? {} : _nodeInfo$panInfo;
+            nodePage = _urls.USER_APPLY_NODE_MAP[nodeCode];
+            if (panInfo && panInfo.panFlag === 'W' && nodeCode === 'PAN') nodePage = _urls.USER_APPLY_NODE_MAP.PAN_RESULT;
+
+            if (!(nodeCode === 'PASSWORD')) {
+              _context8.next = 17;
+              break;
+            }
+
+            _context8.next = 15;
+            return settingTradPwd(nodeInfo, {
+              passwordKey: 'password'
+            }, pwdCall);
+
+          case 15:
+            (0, _toast.close)();
+            return _context8.abrupt("return");
+
+          case 17:
+            _history.default.push(nodePage);
+
+          case 18:
+          case "end":
+            return _context8.stop();
+        }
+      }
+    }, _callee7);
+  }));
+
+  return function toApply(_x5) {
+    return _ref7.apply(this, arguments);
+  };
+}(); // 二次授信前检查
+
+
+exports.toApply = toApply;
+
+var applyActivationCheck =
+/*#__PURE__*/
+function () {
+  var _ref8 = (0, _asyncToGenerator2.default)(
+  /*#__PURE__*/
+  _regenerator.default.mark(function _callee8() {
+    var rst;
+    return _regenerator.default.wrap(function _callee8$(_context9) {
+      while (1) {
+        switch (_context9.prev = _context9.next) {
+          case 0:
+            (0, _toast.loadingOne)();
+            _context9.next = 3;
+            return (0, _fetch.post)(_apis.API_USER_APPLY_ACTIVATION_CHECK, {
+              productCode: _default.DEFAULT_PRODUCT_CODE
+            });
+
+          case 3:
+            rst = _context9.sent;
+            (0, _store.getStoreDispatch)({
+              type: _actions.APPLY_ACTIVATION_CHECK,
+              data: rst || {}
+            });
+            (0, _toast.close)();
+            return _context9.abrupt("return", rst);
+
+          case 7:
+          case "end":
+            return _context9.stop();
+        }
+      }
+    }, _callee8);
+  }));
+
+  return function applyActivationCheck() {
+    return _ref8.apply(this, arguments);
+  };
+}(); // 二次授信
+
+
+exports.applyActivationCheck = applyActivationCheck;
+
+var applyActivation =
+/*#__PURE__*/
+function () {
+  var _ref9 = (0, _asyncToGenerator2.default)(
+  /*#__PURE__*/
+  _regenerator.default.mark(function _callee9(option) {
+    var _option$crawlFalg, crawlFalg, param, addressInfo, fileMap, rst;
+
+    return _regenerator.default.wrap(function _callee9$(_context10) {
+      while (1) {
+        switch (_context10.prev = _context10.next) {
+          case 0:
+            _option$crawlFalg = option.crawlFalg, crawlFalg = _option$crawlFalg === void 0 ? 'N' : _option$crawlFalg;
+            param = {
+              productCode: _default.DEFAULT_PRODUCT_CODE
+            };
+
+            if (!(crawlFalg === 'Y')) {
+              _context10.next = 14;
+              break;
+            }
+
+            _context10.next = 5;
+            return (0, _native.getAddressInfo)({
+              realTime: 'Y',
+              isMust: 'Y'
+            });
+
+          case 5:
+            addressInfo = _context10.sent;
+
+            if (!(!addressInfo || addressInfo.ERROR_TAG)) {
+              _context10.next = 9;
+              break;
+            }
+
+            (0, _toast.close)();
+            return _context10.abrupt("return");
+
+          case 9:
+            param.geoInfo = (0, _stringify.default)(addressInfo);
+            _context10.next = 12;
+            return getExtraInfo();
+
+          case 12:
+            fileMap = _context10.sent;
+            param.fileMap = fileMap;
+
+          case 14:
+            _context10.next = 16;
+            return (0, _native.verTradersPwd)({
+              title: '请输入交易密码',
+              subTitle: '确认借款',
+              businessParams: param,
+              method: _apis.API_USER_APPLY_ITEM_ACTIVATION,
+              field: 'password',
+              requestUrl: _envs2.default.URL
+            });
+
+          case 16:
+            rst = _context10.sent;
+            return _context10.abrupt("return", rst);
+
+          case 18:
+          case "end":
+            return _context10.stop();
+        }
+      }
+    }, _callee9);
+  }));
+
+  return function applyActivation(_x6) {
+    return _ref9.apply(this, arguments);
+  };
+}();
+
+exports.applyActivation = applyActivation;
+;
+/* eslint-disable global-require, import/no-unresolved, no-var, camelcase, func-names */
+
+(function register() {
+  /* react-hot-loader/webpack */
+  var safe_require = function safe_require() {
+    return  false ? undefined : __webpack_require__(/*! react-hot-loader */ "./node_modules/react-hot-loader/index.js");
+  };
+
+  var reactHotLoader = (typeof reactHotLoaderGlobal !== 'undefined' ? reactHotLoaderGlobal : safe_require()).default;
+
+  if (!reactHotLoader) {
+    return;
+  }
+  /* eslint-disable camelcase, no-undef */
+
+
+  var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : exports;
+  /* eslint-enable camelcase, no-undef */
+
+  if (!webpackExports) {
+    return;
+  }
+
+  if (typeof webpackExports === 'function') {
+    reactHotLoader.register(webpackExports, 'module.exports', "D:\\Itmes Files\\360loan-india\\src\\pages\\apply\\utils.js");
+    return;
+  }
+  /* eslint-disable no-restricted-syntax */
+
+
+  for (var key in webpackExports) {
+    /* eslint-enable no-restricted-syntax */
+    if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) {
+      continue;
+    }
+
+    var namedExport = void 0;
+
+    try {
+      namedExport = webpackExports[key];
+    } catch (err) {
+      continue;
+    }
+
+    reactHotLoader.register(namedExport, key, "D:\\Itmes Files\\360loan-india\\src\\pages\\apply\\utils.js");
+  }
+})();
+
+/***/ })
+
+}]);
+//# sourceMappingURL=2.js.map

@@ -1,8 +1,8 @@
 {
   "name": "xl_pup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "基于 puppeteer UI 自动化测试工具",
-  "main": "dist/index.min.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +16,8 @@
     "babel-register": "^6.26.0",
     "chalk": "^2.4.2",
     "puppeteer-core": "^1.19.0",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.3",
+    "xl_pup": "^1.0.1",
+    "yargs": "^13.3.0"
   }
 }

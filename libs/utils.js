@@ -7,6 +7,11 @@ import fs from 'fs';
 import chalk from 'chalk'
 
 let count = 0
+export const logInfo = (msg, type = true) => {
+    if (type) count += 1
+    console.log(chalk.green(`${count}、${msg}`))
+}
+
 export const log = (msg, type = true) => {
     if (type) count += 1
     console.log(chalk.green(`${count}、${msg}`))
