@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="format-detection" content="telephone=no, email=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta http-equiv="Content-Security-Policy" content="unsafe-inline unsafe-eval default-src 'none'">
+    <title>xl-pup</title>
+    <style>
+        ul {
+            list-style-type: decimal;
+        }
+
+        li {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+<div style="line-height: 30px;padding-left: 20px;">
+    <h3 style="padding-left: 17px">选择入口:</h3>
+    <ul style="line-height: 50px;list-style-type: decimal;">
+        <!--list-->
+        <li>默认</li>
+        <li>etse</li>
+        <li>sdf</li>
+    </ul>
+</div>
+<script>
+    document.querySelectorAll('ul li').forEach(item => {
+        item.addEventListener('click', (e) => {
+            const target = e.target
+            const index = target.getAttribute('index')
+            startItem(index)
+        })
+    })
+</script>
+</body>
+</html>
