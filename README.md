@@ -9,8 +9,9 @@ npm install xl_pup
 ## 使用
 
 ```
-import pup, {del, input, click, check, enter, focus, log} from './dist/index.min'<br/>
-import {setReq, setRes, proxy, setExpose} from './dist/index.min'
+require('babel-register')  // 需要加babel,不然不能用es6模块功能
+import pup, {del, input, click, check, enter, focus, log} from 'xl_pup'
+import {setReq, setRes, proxy, setExpose} from 'xl_pup'
 
 // 初始化页面
     await pup('http://127.0.0.1:8088/#/index/home', {

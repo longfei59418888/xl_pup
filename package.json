@@ -1,6 +1,6 @@
 {
   "name": "xl_pup",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "基于 puppeteer UI 自动化测试工具",
   "main": "dist/index.js",
   "scripts": {
